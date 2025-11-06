@@ -153,35 +153,49 @@ th.headerCell {
 }
 
 
-/* ✅ ✅ FIX AVANZADO PARA BAJAR LOS TOTALES */
+/* ============================================================
+   ✅ TOTAL SIEMPRE ABAJO (STICKY BOTTOM)
+   ✅ CABECERA FIJA ARRIBA (STICKY TOP)
+   ✅ PARA TILES DE ALTURA FIJA (SIN CAMBIAR EL TAMAÑO DEL TILE)
+   ============================================================ */
 
-/* Mantener el cuerpo como cuerpo */
-table.reportTable tbody {
-  display: table-row-group !important;
+/* Contenedor del report table con scroll interno */
+#visContainer,
+table#reportTable {
+  display: block !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  overflow: auto !important;
+  width: 100% !important;
 }
 
-/* Forzar TFOOT si existe */
-table.reportTable tfoot {
-  display: table-footer-group !important;
+/* Mantener tbody con layout de tabla */
+table#reportTable tbody {
+  display: table;
+  width: 100%;
 }
 
-/* Caso estándar: TOTAL en <tr class="total"> */
-table.reportTable tbody tr.total {
-  display: table-footer-group !important;
+/* ✅ Header sticky arriba */
+table#reportTable thead th {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: #1E2C5B !important;
+  color: white !important;
 }
 
-/* Caso donde Looker mete la clase total en <td> */
-table.reportTable tbody tr:has(td.total) {
-  display: table-footer-group !important;
+/* ✅ TOTAL sticky abajo (funciona aunque no tenga clase .total) */
+table#reportTable tbody tr.total td,
+table#reportTable tbody tr:last-child td {
+  position: sticky;
+  bottom: 0;
+  z-index: 4;
+  background: #F2F4F7 !important;
+  font-weight: 700 !important;
+  border-top: 2px solid #696969 !important;
 }
 
-/* Caso donde Looker inserta totals en una tabla separada */
-div.reportTable tfoot,
-div.reportTable table tfoot {
-  display: table-footer-group !important;
-}
-
-/* Garantizar que cualquier fila con .total baje */
-tr.total, tr.total td {
+/* Forzar tfoot si existiera */
+table#reportTable tfoot {
   display: table-footer-group !important;
 }

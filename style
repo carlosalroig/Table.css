@@ -110,3 +110,16 @@ th.headerCell:last-child {
   width: 180px !important;
   max-width: 180px !important;
 }
+
+/* Reemplazar el símbolo "ø" por un guion "-" */
+.reportTable td.numeric:contains("ø") {
+  color: transparent !important;
+  position: relative;
+}
+
+.reportTable td.numeric:contains("ø")::after {
+  content: "-" !important;
+  color: #2b2b2b !important; /* mismo color del texto normal */
+  position: absolute;
+  right: 12px; /* ajusta alineación a la derecha */
+}

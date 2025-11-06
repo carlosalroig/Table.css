@@ -81,3 +81,17 @@ th.headerCell:last-child {
 .reportTable a:hover {
   text-decoration: underline;
 }
+
+/* Ocultar el tooltip flotante de los headers */
+#tooltip {
+  display: none !important;
+  opacity: 0 !important;
+}
+
+/* Cambiar ancho de la columna Dimension selected (columna 1) */
+.reportTable th:nth-child(1),
+.reportTable td:nth-child(1) {
+  width: 180px !important;     /* ← AJUSTA ESTE VALOR */
+  max-width: 180px !important;
+  white-space: nowrap !important;
+}

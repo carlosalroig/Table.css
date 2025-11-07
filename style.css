@@ -79,6 +79,21 @@ th.headerCell:last-child {
   border-top: 2px solid #1f716e !important;
 }
 
+/* Mantener TOTAL visible cuando la tabla se estrecha*/
+.reportTable tr.total {
+  display: table-row !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* TOTAL sticky (siempre visible al fondo aunque haya scroll) */
+.reportTable tr.total td {
+  position: sticky !important;
+  bottom: 0;
+  background: #E2EAE9 !important;   
+  z-index: 20;
+}
+
 /* Enlaces (drill) */
 .reportTable a {
   color: #1f716e !important;

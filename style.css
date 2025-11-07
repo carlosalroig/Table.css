@@ -29,7 +29,7 @@ th.headerCell:last-child {
 
 /* CELDAS */
 .reportTable td {
-  padding: 8px 12px !important;
+  padding: 3px 12px !important;
   border-right: 1px solid #E3E7E8;
   border-bottom: 1px solid #E3E7E8;
   background: #ffffff;
@@ -101,7 +101,7 @@ th.headerCell:last-child {
 
 .reportTable th,
 .reportTable td {
-  width: 180px !important;
+  width: 130px !important;
 }
 
 /* ← Tamaño primera columna */

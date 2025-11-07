@@ -15,7 +15,7 @@ th.headerCell {
   background: #1f716e !important;
   color: #fff !important;
   font-weight: 600;
-  padding: 10px 12px !important;
+  padding: 5px 12px !important;
   border-bottom: 0 !important;
   border-right: 1px solid rgba(255,255,255,0.18);
 }
@@ -107,7 +107,7 @@ th.headerCell:last-child {
 
 .reportTable th:nth-child(1),
 .reportTable td:nth-child(1) {
-  width: 180px !important;
-  max-width: 350px !important;
+  width: 400px !important;
+  max-width: 400px !important;
   min-width: 180px !important;
 }

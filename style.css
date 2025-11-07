@@ -79,16 +79,14 @@ th.headerCell:last-child {
   border-top: 2px solid #1f716e !important;
 }
 
-/* Enlaces (drill) — subrayado permanente solo en valores clicables */
-.reportTable td a[href] {
+/* Enlaces (drill) */
+.reportTable a {
   color: #1f716e !important;
   font-weight: 600;
-  text-decoration: underline !important;
+  text-decoration: underline !important;   
 }
-
-/* Hover consistente */
-.reportTable td a[href]:hover {
-  text-decoration: underline !important;
+.reportTable a:hover {
+  text-decoration: underline;
 }
 
 /* Ocultar el tooltip flotante */

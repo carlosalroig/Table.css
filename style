@@ -111,3 +111,41 @@ th.headerCell:last-child {
   max-width: 400px !important;
   min-width: 180px !important;
 }
+
+/* ============================================================
+   HACER QUE LA TABLA LLENE EL TILE (scroll + sticky header/total)
+   ============================================================ */
+
+/* Contenedor interno de la visualización Looker */
+#visContainer {
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+/* La tabla ocupa todo el espacio vertical del contenedor */
+#reportTable {
+  flex: 1 1 auto;
+  overflow-y: auto !important;  /* scroll interno si hace falta */
+  display: block;
+  width: 100%;
+}
+
+/* Header pegado arriba */
+#reportTable thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #1f716e !important;
+  color: #fff !important;
+}
+
+/* TOTAL pegado abajo */
+#reportTable tbody tr:last-child {
+  position: sticky;
+  bottom: 0;
+  z-index: 9;
+  background: #E2EAE9 !important;
+  font-weight: 700 !important;
+  border-top: 2px solid #1f716e !important;
+}

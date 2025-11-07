@@ -107,6 +107,7 @@ th.headerCell:last-child {
 /* ← Tamaño primera columna */
 .reportTable th:first-child,
 .reportTable td:first-child {
-  width: 350px !important; 
+  width: 350px !important;
+  text-align: left !important;
 }
 

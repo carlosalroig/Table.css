@@ -108,6 +108,6 @@ th.headerCell:last-child {
 .reportTable th:nth-child(1),
 .reportTable td:nth-child(1) {
   width: 250px !important;
-  max-width: 180px !important;
+  max-width: 250px !important;
   min-width: 180px !important;
 }

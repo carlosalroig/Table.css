@@ -89,6 +89,9 @@ th.headerCell:last-child {
   text-decoration: underline;
 }
 
+/* Subraya la celda si contiene un link */
+.reportTable td:has(a) { text-decoration: underline !important; }
+
 /* Ocultar el tooltip flotante */
 #tooltip {
   display: none !important;

@@ -79,46 +79,6 @@ th.headerCell:last-child {
   border-top: 2px solid #1f716e !important;
 }
 
-/* Mantener TOTAL visible cuando la tabla se estrecha*/
-.reportTable tr.total {
-  display: table-row !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-/* Hacer que el scroll viva dentro de la tabla */
-.reportTable {
-  display: block !important;
-  max-height: 420px;             /* ajusta la altura visible */
-  overflow: auto !important;
-}
-
-/* Mantener estructura */
-.reportTable thead,
-.reportTable tbody {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-
-.reportTable tbody {
-  display: block;
-}
-
-.reportTable tbody tr {
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-
-/* TOTAL sticky dentro del contenedor que scrollea */
-.reportTable tbody tr.total {
-  position: sticky !important;
-  bottom: 0;
-  z-index: 30;
-  background: #E2EAE9 !important;
-  border-top: 2px solid #1f716e !important;
-}
-
 /* Enlaces (drill) */
 .reportTable a {
   color: #1f716e !important;

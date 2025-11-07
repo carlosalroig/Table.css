@@ -89,9 +89,6 @@ th.headerCell:last-child {
   text-decoration: underline;
 }
 
-/* Subraya la celda si contiene un link */
-.reportTable td:has(a) { text-decoration: underline !important; }
-
 /* Ocultar el tooltip flotante */
 #tooltip {
   display: none !important;
@@ -112,5 +109,9 @@ th.headerCell:last-child {
 .reportTable td:first-child {
   width: 350px !important;
   text-align: left !important;
+}
+
+.reportTable tbody td:nth-child(4) {
+  text-decoration: underline !important;
 }
 

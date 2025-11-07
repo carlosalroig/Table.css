@@ -104,10 +104,3 @@ th.headerCell:last-child {
   width: 180px !important;
   max-width: 180px !important;
 }
-
-.reportTable th:nth-child(1),
-.reportTable td:nth-child(1) {
-  width: 180px !important;
-  max-width: 180px !important;
-  min-width: 180px !important;
-}

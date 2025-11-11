@@ -113,10 +113,7 @@ th.headerCell:last-child {
 
 .reportTable tbody td:nth-child(4) {
   text-decoration: underline !important;
-}
-
-/* Cursor de “dedito” en enlaces de drill */
-.reportTable a,
-.reportTable a * {
   cursor: pointer !important;
 }
+
+
